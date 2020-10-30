@@ -1,0 +1,32 @@
+<div class="global">
+
+    <img class="logo logoLight" src="assets/logo_grey.png" alt="logo_grey">
+    <img class="logo logoDark" src="assets/Logo-white-new.png" alt="logo_white">
+    <p class="Code"> Enter Code</p>
+        <div id="container">
+            <div class="codeboxContainer">
+                <input type="text" maxlength="1" class="Codebox"/>
+            </div>
+            <div class="codeboxContainer">
+                <input type="text" maxlength="1" class="Codebox"/>
+            </div>
+            <div class="codeboxContainer">
+                <input type="text" maxlength="1" class="Codebox"/>
+            </div>
+            <div class="codeboxContainer">
+                <input type="text" maxlength="1" class="Codebox"/>
+            </div>
+        </div>  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button type="Connect" class="Connect" routerLink="../Main">Connect</button>
+    <router-outlet></router-outlet>
+    <div class="loader"></div>
+    <br>
+    <div id="text">Loading...</div>
+
+</div>
+<app-weather-component></app-weather-component>

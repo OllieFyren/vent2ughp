@@ -1,0 +1,77 @@
+<div id="darkModeContainer">
+    <h1 class="headline">Air</h1>
+    <div class="buttonCont">
+            <button class="button headButton back" routerLink="../Main">
+            <svg class="lightIcon lightIcon1" xmlns="http://www.w3.org/2000/svg" width="18.515" height="20.984" viewBox="0 0 18.515 20.984">
+                <path id="Icon_material-subdirectory-arrow-left" data-name="Icon material-subdirectory-arrow-left" d="M14.906,12.172l1.753,1.753-4.431,4.419H23.547V6h2.469V20.812H12.228l4.431,4.419-1.753,1.753L7.5,19.578Z" transform="translate(-7.5 -6)" fill="#353d4a"/>
+            </svg>
+            <svg class="darkIcon darkIcon1" xmlns="http://www.w3.org/2000/svg" width="18.515" height="20.984" viewBox="0 0 18.515 20.984">
+                <path id="Icon_material-subdirectory-arrow-left" data-name="Icon material-subdirectory-arrow-left" d="M14.906,12.172l1.753,1.753-4.431,4.419H23.547V6h2.469V20.812H12.228l4.431,4.419-1.753,1.753L7.5,19.578Z" transform="translate(-7.5 -6)" fill="#fff"/>
+            </svg>
+        </button>
+        <button class="button headButton close" routerLink="">
+            <svg class="lightIcon" xmlns="http://www.w3.org/2000/svg" width="13.426" height="13.423" viewBox="0 0 13.426 13.423">
+                <path id="Icon_ionic-ios-close" data-name="Icon ionic-ios-close" d="M19.589,18l4.8-4.8A1.124,1.124,0,0,0,22.8,11.616l-4.8,4.8-4.8-4.8A1.124,1.124,0,1,0,11.616,13.2l4.8,4.8-4.8,4.8A1.124,1.124,0,0,0,13.2,24.384l4.8-4.8,4.8,4.8A1.124,1.124,0,1,0,24.384,22.8Z" transform="translate(-11.285 -11.289)" fill="#353d4a"/>
+            </svg>
+            <svg class="darkIcon" xmlns="http://www.w3.org/2000/svg" width="13.426" height="13.423" viewBox="0 0 13.426 13.423">
+                <path id="Icon_ionic-ios-close" data-name="Icon ionic-ios-close" d="M19.589,18l4.8-4.8A1.124,1.124,0,0,0,22.8,11.616l-4.8,4.8-4.8-4.8A1.124,1.124,0,1,0,11.616,13.2l4.8,4.8-4.8,4.8A1.124,1.124,0,0,0,13.2,24.384l4.8-4.8,4.8,4.8A1.124,1.124,0,1,0,24.384,22.8Z" transform="translate(-11.285 -11.289)" fill="#fff"/>
+            </svg>
+        </button>
+        <router-outlet></router-outlet>
+    </div>
+    <div class="tempGlobal">
+        <div class="tempCont">
+            <h2 class="tempHead">Room temperature</h2>
+            <div class="tempCircle">
+                <div id="indexFour" class="segmentOne segment">
+                    <h1 class="tempDegree"></h1>
+                </div>
+                <div class="segmentTwo segment"></div>
+                <div class="segmentThree segment"></div>
+                <div class="segmentFour segment"></div>
+                <div id="one" class="segmentOneRed segment"></div>
+                <div id="two" class="segmentTwoRed segment"></div>
+                <div id="three" class="segmentThreeRed segment"></div>
+                <div id="four" class="segmentFourRed segment"></div>
+            </div>
+        </div>
+        <div class="tempContSmall first">
+            <div class="tempCircleSmall">
+                <div class="segmentOneSmall segmentSmall">
+                    <h3>Humidity</h3>
+                    <p>40%</p>
+                </div>
+                <div class="segmentTwoSmall segmentSmall"></div>
+                <div class="segmentThreeSmall segmentSmall"></div>
+                <div class="segmentFourSmall segmentSmall"></div>
+                <div class="segmentOneRedSmall segmentSmall"></div>
+                <div class="segmentTwoRedSmall segmentSmall"></div>
+                <div class="segmentThreeRedSmall segmentSmall"></div>
+                <div class="segmentFourRedSmall segmentSmall"></div>
+            </div>
+        </div>
+        <div class="tempContSmall">
+            <div class="tempCircleSmall">
+                <div class="segmentOneSmall segmentSmall">
+                    <h3>Oxygen</h3>
+                    <p>10%</p>
+                </div>
+                <div class="segmentTwoSmall segmentSmall"></div>
+                <div class="segmentThreeSmall segmentSmall"></div>
+                <div class="segmentFourSmall segmentSmall"></div>
+                <div class="segmentOneRedSmall segmentSmall"></div>
+                <div class="segmentTwoRedSmall segmentSmall"></div>
+                <div class="segmentThreeRedSmall segmentSmall"></div>
+                <div class="segmentFourRedSmall segmentSmall"></div>
+            </div>
+        </div>
+    </div>
+    <h2 class="tempText">Temperature Settings</h2>
+    <div class="tempChange">
+        <img class="imgSlider lightModeSlider" src="assets/slider.png">
+        <input type="range" min="20" max="30" value="24" class="slider" id="tempRange">
+    </div>
+    <div class="applyCont">
+        <button class="button"><p>APPLY</p></button>
+    </div>
+</div>

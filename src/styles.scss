@@ -1,0 +1,77 @@
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 420px;
+}
+input, button {
+    outline: none;
+}
+.dark {
+    background-color: #353d4a;
+        .tempDegree, h3, p, .tempText, .tempHead, .headline {
+            color: white;
+        }
+        .button {
+            background-color: #353d4a;
+            color: white;
+            border: solid #eef1fb 2px;
+            -webkit-box-shadow: 0px 1px 5px 0px rgba(255,255,255,0.5);
+            -moz-box-shadow: 0px 1px 5px 0px rgba(255,255,255,0.5);
+            box-shadow: 0px 1px 5px 0px rgba(255,255,255,0.5);
+    
+        }
+        .lightIcon {
+            display: none !important;
+        }
+        .darkIcon {
+            display: block !important;
+            position: absolute;
+            margin-top: -6px !important;
+            margin-left: 8px !important;
+        }
+        .darkIcon1 {
+            margin-top: -10px !important;
+            margin-left: 3px !important;
+        }
+        .slider {
+            background-color: #353d4a !important;
+        }
+        .temperature, .weather, .control, h6, p {
+            color: white;
+          }
+        button {
+            background-color: #353d4a !important;
+            box-shadow: 0px 3px 10px 0px rgba(255,255,255,1) !important;
+          }
+        .btn, .code, #text, .IP, .Attention, .Code {
+            color: white !important;
+          }
+          .loader {
+            border: 6px solid white !important;
+            border-top: 6px solid #97CAEF !important;
+          }
+          .logoLight {
+              display: none !important;
+          }
+          .logoDark {
+              display: block !important;
+          }
+          .weather {
+              h6 {
+                  color: white !important;
+              }
+          }
+          .switch2 {
+              display: block !important;
+          }
+          .switch1 {
+              display: none;
+          }
+          .weather {
+              img {
+                  margin-left: 0 !important;
+              }
+          }
+}
