@@ -2,6 +2,7 @@ $(document).ready(function(){
     $(".tempDegree").html(document.getElementById("tempRange").value + "°");
     window.lastValue = 24;
     document.getElementById("tempRange").oninput = function(){
+        $(".applyButton").fadeIn(500);
         var sliderValue1 = document.getElementById("tempRange");
         sliderValue2 = sliderValue1.value;
         $(".tempDegree").html(sliderValue2 + "°");
