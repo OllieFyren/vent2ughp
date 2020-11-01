@@ -19,6 +19,9 @@ $primary: #353d4a;
 .temperature {
   text-align: center;
   font-size: 23px;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 40px;
 }
 
 .weather {
@@ -33,6 +36,8 @@ $primary: #353d4a;
   text-align: center;
   font-size: 22px;
   font-weight: 500;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .container{

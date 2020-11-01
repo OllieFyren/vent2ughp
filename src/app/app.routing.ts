@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
 
-import { AppComponent } from './app.component';
 import { IPComponentComponent } from './ipcomponent/ipcomponent.component';
 import { CodeComponentComponent } from './code-component/code-component.component';
 import { MainPageComponentComponent } from './main-page-component/main-page-component.component';

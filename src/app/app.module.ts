@@ -10,6 +10,15 @@ import { TemperatureComponentComponent } from './temperature-component/temperatu
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 import { WeatherComponentComponent } from './weather-component/weather-component.component';
 import { TempComponent } from './temp/temp.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IpInputComponent } from './ip-input/ip-input.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -20,11 +29,20 @@ import { TempComponent } from './temp/temp.component';
     TemperatureComponentComponent,
     NotFoundComponentComponent,
     WeatherComponentComponent,
-    TempComponent
+    TempComponent,
+    IpInputComponent
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

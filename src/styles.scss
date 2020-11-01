@@ -75,6 +75,9 @@ input, button {
               display: none;
           }
           .weather {
+              p {
+                color: white !important;
+              }
               img {
                   margin-left: 0 !important;
               }
