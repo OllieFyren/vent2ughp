@@ -5,6 +5,7 @@
 }
 .headline {
     text-align: center;
+    margin-top: 30px;
 }
 .tempText {
     text-align: center;
@@ -172,7 +173,7 @@
                 margin-right: auto;
                 margin-left: auto;
                 font-size: 25px;
-                font-weight: 700;
+                font-weight: 400;
                 margin-right: -25px;
                 margin-top: -20px;
             }
@@ -248,6 +249,12 @@
     margin-top: 20px;
 }
 .tempChange {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(94,94,94,1);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(94,94,94,1);
+    box-shadow: 0px 3px 10px 0px rgba(94,94,94,1);
+    width: 310px;
+    border-radius: 10px;
+
     input {
         margin-right: auto;
         margin-left: auto;
