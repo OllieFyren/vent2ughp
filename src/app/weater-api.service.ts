@@ -3,6 +3,7 @@ export class WeatherService {
       return [
       {
           temperature: '15°C'
-      }];
+      }
+    ];
   }
 }
