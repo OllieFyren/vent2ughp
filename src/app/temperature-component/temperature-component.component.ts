@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UnitService } from '../unit.service';
 
 @Component({
   selector: 'app-temperature-component',
@@ -6,13 +7,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./temperature-component.component.scss']
 })
 export class TemperatureComponentComponent implements OnInit {
-
-  constructor() { 
+  unit = {
+    target_temp_new: '',
+    room_id: '',
+    unit_id: ''
+  }
+  submitted = false;
+  constructor(private unitService: UnitService) { 
     this.loadScripts();
   }
+  saveData(){
+    const data = {
+      target_temp_new: this.unit.target_temp_new,
+      room_id: '1',
+      unit_id: '1'
+    }
+    this.unitService.create(data)
+      .subscribe(
+        response => {
+          console.log(response);
+          this.submitted = true;
+        },
+        error => {
+          console.log(error);
+        });
+  }
   loadScripts() { 
-  
-    // This array contains all the files/CDNs 
     const dynamicScripts = [ 
        'assets/load.js'
     ]; 
